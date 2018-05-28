@@ -1,1 +1,14 @@
-/* custom stylesheet to supplement spacelab theme */
+/* custom stylesheet by Kay McKelly, to supplement spacelab theme */
+
+
+/* Universal or Top Nav */
+/* NOTE: this connects to other sites on the King County domain */
+nav#universalNav {
+  margin-top: 0;
+}
+
+h6.navTitle {
+  font-weight: bold;
+  border-bottom: green 1px solid;
+  padding: 10px;
+}

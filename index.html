@@ -8,6 +8,9 @@
 
     <!-- styles: required (bootstrap - spacelab theme) -->
     <link rel="stylesheet" href="./bootstrap/spacelab.min.css" />
+
+    <!-- styles: custom -->
+    <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
     <!-- NOTE: lightly edited original code from site -->
@@ -19,10 +22,83 @@
       </div>
     <!-- End Global Alert -->
 
+    <!-- NOTE: complete redesign of original navbar, which was almost 600 lines (WHAT WHY NO) -->
+    <!-- Top navbar (King County site-wide) -->
+    <nav id="universalNav" class="navbar navbar-expand-md navbar-light bg-light">
+      <a href="#" class="navbar-brand w-25" id="navBrand">
+        <img src="./images/KClogo-horiz-black-lg.gif"  alt="A black and white logo of Martin Luther King Junior's face with the words King County next to it." />
+      </a>
 
-    <!-- scripts: required (jQuery, popper.js, & bootstrap js) -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsedNavContent" aria-controls="collapsedNavContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsedNavContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              Home
+            </a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              How do I...?
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <h6 class="navTitle">Apply for</h6>
+              <a class="dropdown-item" href="#">Permits</a>
+              <a class="dropdown-item" href="#">Jobs at King County</a>
+              <a class="dropdown-item" href="#">Pet License</a>
+              <a href="#" class="btn btn-sm btn-outline-primary dropdown-item">
+                <ion-icon name="more"></ion-icon>
+              </a>
+              <div class="dropdown-divider"></div>
+              <h6 class="navTitle">Attend</h6>
+              <a class="dropdown-item" href="#">Jury duty</a>
+              <div class="dropdown-divider"></div>
+              <h6 class="navTitle">Do business with King County</h6>
+              <a class="dropdown-item" href="#">Register as a vendor</a>
+              <a class="dropdown-item" href="#">View bid & contract opportunities</a>
+              <a class="dropdown-item" href="#">Become a certified small business contractor or supplier</a>
+              <a href="#" class="btn btn-sm btn-outline-primary dropdown-item">
+                <ion-icon name="more"></ion-icon>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              NAME
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <h6 class="navTitle">Apply for</h6>
+              <a class="dropdown-item" href="#">Permits</a>
+              <a class="dropdown-item" href="#">Jobs at King County</a>
+              <a class="dropdown-item" href="#">Pet License</a>
+              <a href="#" class="btn btn-sm btn-outline-primary dropdown-item">
+                <ion-icon name="more"></ion-icon>
+              </a>
+              <div class="dropdown-divider"></div>
+            </div>
+          </li>
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0">
+          <input id="topSearchBar" class="form-control mr-sm-2 w-75" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            <ion-icon name="search"></ion-icon>
+          </button>
+        </form>
+      </div>
+    </nav>
+
+
+    <!-- scripts: required (jQuery, popper.js, bootstrap js, & ionicons) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@4.1.2/dist/ionicons.js"></script>
   </body>
 </html>

@@ -13,18 +13,31 @@
     <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
-    <!-- NOTE: lightly edited original code from site -->
-    <!-- Global Alert -->
-      <div class="alert alert-primary" onclick="location.href='https://kingcounty.gov/about/contact-us/closures/memorialday.aspx" role="alert">
-        <a class="alert-link" href="https://kingcounty.gov/about/contact-us/closures/memorialday.aspx">
-        Most King County offices will be closed on Monday, May 28, for Memorial Day.&nbsp;&nbsp;<span class="fa fa-chevron-right"></span>
-        </a>
-      </div>
-    <!-- End Global Alert -->
+    <div id="navbarBg">
+      <!-- NOTE: bg added in main.css -->
+      <div class="row">
+        <!-- top King County logo -->
+        <div class="col-md-2 offset-md-1 col-4 offset-1" id="logoWrapper">
+          <a href="https://www.kingcounty.gov/">
+            <img id="kc-logo" src="./test/KClogo-horiz-black-lg.gif" alt="King County Logo" class="img-fluid mx-auto d-block">
+          </a>
+        </div>
 
-    <!-- NOTE: complete redesign of original navbar, which was almost 600 lines (WHAT WHY NO) -->
+        <!-- universal search (for all of King County site) -->
+        <!-- BUG: broken on mobile. srsly bootstrap, what up with this search sizing problem on small screens?? -->
+        <div class="col-md-3 offset-md-6 col-6">
+          <form class="form-inline my-2">
+            <input id="topSearchBar" class="form-control mr-sm-2" type="search" placeholder="Search King County" aria-label="Search" />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              <ion-icon name="search"></ion-icon>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <!-- Top navbar (King County site-wide) -->
-    <nav id="universalNav" class="navbar navbar-expand-md navbar-light bg-light">
+    <!-- <nav id="universalNav" class="navbar navbar-expand-md navbar-light bg-light">
       <a href="#" class="navbar-brand w-25" id="navBrand">
         <img src="./images/KClogo-horiz-black-lg.gif"  alt="A black and white logo of Martin Luther King Junior's face with the words King County next to it." />
       </a>
@@ -39,15 +52,15 @@
             <a href="#" class="nav-link">
               Home
             </a>
-          </li>
+          </li> -->
           <!-- NOTE: these dropdowns are deliberately left unfinished because they are part of the county site design, which I don't have control over, so this is just an approximation -->
-          <li class="nav-item dropdown">
+          <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               How do I...?
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
               <!-- NOTE: I opted to write custom css for the h6, rather than using the native Bootstrap 4 dropdown-header class -->
-              <h6 class="navTitle">Apply for</h6>
+              <!-- <h6 class="navTitle">Apply for</h6>
               <a class="dropdown-item" href="#">Permits</a>
               <a class="dropdown-item" href="#">Jobs at King County</a>
               <a class="dropdown-item" href="#">Pet License</a>
@@ -108,30 +121,30 @@
               <a class="dropdown-item" href="#">Economic & Financial Analysis</a>
             </div>
           </li>
-        </ul>
+        </ul> -->
 
         <!-- universal search (for all of King County) -->
-        <form class="form-inline my-2 my-lg-0">
+        <!-- <form class="form-inline my-2 my-lg-0">
           <input id="topSearchBar" class="form-control mr-sm-2 w-75" type="search" placeholder="Search King County" aria-label="Search" />
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
             <ion-icon name="search"></ion-icon>
           </button>
         </form>
       </div>
-    </nav>
+    </nav> -->
 
-    <header class="jumbotron">
+    <!-- <header class="jumbotron">
       <h1 class="display-5">
         King County Prosecuting Attorney
-      </h1>
+      </h1> -->
       <!-- BUG: breaks at 577px WTF WTF WTF -->
-      <form class="form-inline d-inline-flex">
+      <!-- <form class="form-inline d-inline-flex">
         <input id="searchPApages" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search Prosecuting Attorney's pages" />
         <button class="btn btn-sm btn-outline-primary" type="submit">
           <ion-icon name="search"></ion-icon>
         </button>
       </form>
-    </header>
+    </header> -->
 
     <!-- scripts: required (jQuery, popper.js, bootstrap js, & ionicons) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

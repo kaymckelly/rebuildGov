@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0048)https://www.kingcounty.gov/depts/prosecutor.aspx -->
-<html lang="en" class=" js flexbox flexboxlegacy canvas canvastext webgl touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"
+<html lang="en" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"
   style="">
 
 <head>
@@ -59,13 +59,8 @@
 
   <!-- CustomHead-->
 
-
-  <link rel="shortcut icon" type="image/x-icon" href="https://www.kingcounty.gov/favicon.ico">
   <link rel="stylesheet" href="./test/kc-theme-Corporate.css">
-  <!-- NOTE: duplicate? -->
   <link href="./test/css(1)" rel="stylesheet" type="text/css">
-
-  <!-- NOTE: scripts - a whole lot of them -->
   <script src="./test/1306.js" async="" type="text/javascript"></script>
   <script id="twitter-wjs" src="./test/widgets.js"></script>
   <script async="" src="./King County Prosecuting Attorney - King County_files/analytics.js"></script>
@@ -88,8 +83,10 @@
     }
   </style>
   <script type="text/javascript" charset="UTF-8" src="./King County Prosecuting Attorney - King County_files/onion.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="./King County Prosecuting Attorney - King County_files/ViewportInfoService(1).GetViewportInfo"></script>
   <script type="text/javascript" charset="UTF-8" src="./King County Prosecuting Attorney - King County_files/controls.js"></script>
   <script type="text/javascript" charset="UTF-8" src="./King County Prosecuting Attorney - King County_files/stats.js"></script>
+  <script type="text/javascript" charset="UTF-8" src="./King County Prosecuting Attorney - King County_files/QuotaService.RecordEvent"></script>
 </head>
 
 
@@ -113,14 +110,6 @@
 
   <!-- Global Alert Goes Here -->
 
-  <div class="alert alert-primary alert-global" onclick="location.href=&#39;https://kingcounty.gov/about/contact-us/closures/memorialday.aspx&#39;">
-    <div class="container">
-      <a class="alert-link" href="https://kingcounty.gov/about/contact-us/closures/memorialday.aspx">
-                Most King County offices will be closed on Monday, May 28, for Memorial Day.&nbsp;&nbsp;<span class="fa fa-chevron-right"></span>
-                </a>
-    </div>
-  </div>
-
   <!-- End Global Alerts -->
 
 
@@ -131,7 +120,7 @@
       <div class="row">
         <div id="nav-left-lg">
           <div id="logo-wrapper"><a href="https://www.kingcounty.gov/">
-                    <img id="kc-logo" src="./King County Prosecuting Attorney - King County_files/KClogo-horiz-black-lg.gif" alt="King County Logo" class="img-responsive"></a></div>
+                    <img id="kc-logo" src="./test/KClogo-horiz-black-lg.gif" alt="King County Logo" class="img-responsive"></a></div>
         </div>
         <!-- /#nav-logo-lg -->
         <div id="nav-right-lg">
@@ -408,7 +397,7 @@
       <div class="container visible-sm">
         <div class="navbar-header remove-border-bottom">
           <a href="https://www.kingcounty.gov/">
-                    <img src="./King County Prosecuting Attorney - King County_files/KClogo-horiz-white-sm-xs.png" alt="King County logo" class="img-responsive"></a>
+                    <img src="./test/KClogo-horiz-white-sm-xs.png" alt="King County logo" class="img-responsive"></a>
         </div>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="https://www.kingcounty.gov/" class="nav-header"><span class="fa fa-home"></span></a></li>
@@ -682,7 +671,7 @@
     <nav id="nav-xs" role="navigation" class="navbar navbar-inverse">
       <div class="container visible-xs">
         <div class="navbar-header remove-border-bottom">
-          <button type="button" data-toggle="collapse" data-target="#navbar-dropdown-xs" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="fa fa-search fa-2x"></span></button><a href="https://www.kingcounty.gov/"><img src="./King County Prosecuting Attorney - King County_files/KClogo-horiz-white-sm-xs.png" alt="King County logo" class="img-responsive"></a>
+          <button type="button" data-toggle="collapse" data-target="#navbar-dropdown-xs" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="fa fa-search fa-2x"></span></button><a href="https://www.kingcounty.gov/"><img src="./test/KClogo-horiz-white-sm-xs.png" alt="King County logo" class="img-responsive"></a>
           <button id="nav-search-btn-xs" type="button" data-toggle="collapse" data-target="#navbar-dropdown-xs" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="fa fa-bars fa-2x"></span></button>
         </div>
         <div id="navbar-dropdown-xs" class="collapse navbar-collapse">
@@ -709,9 +698,9 @@
   <!-- MAIN CONTENT -->
   <div id="main-content">
     <!-- MOBILE IMAGE IS OPTIONAL -->
-    <img id="mobile-bg" src="./King County Prosecuting Attorney - King County_files/hero-lake1-sm.jpg" alt="background image" aria-hidden="true" class="visible-xs img-responsive hidden-print">
+    <img id="mobile-bg" src="https://www.kingcounty.gov/depts/prosecutor.aspx" alt="background image" aria-hidden="true" class="visible-xs img-responsive hidden-print">
     <div class="container">
-      <img id="logo-img-print" src="./King County Prosecuting Attorney - King County_files/KClogo-horiz-black-lg.gif" alt="King County logo" class="visible-print">
+      <img id="logo-img-print" src="./test/KClogo-horiz-black-lg.gif" alt="King County logo" class="visible-print">
       <div class="row row-offcanvas row-offcanvas-left">
 
         <!-- SIDENAV -->
@@ -813,7 +802,48 @@
 
           <div class="row addon-row addon-row-attached ">
             <div class="col-sm-12">
-
+              <div class="carousel carousel-col-4 slide" id="kc-carousel-2" data-ride="carousel">
+                <!-- Indicators-->
+                <ol class="carousel-indicators">
+                  <li class="active" data-target="#kc-carousel-2" data-slide-to="0"></li>
+                  <li data-target="#kc-carousel-2" data-slide-to="1" class=""></li>
+                  <li data-target="#kc-carousel-2" data-slide-to="2" class=""></li>
+                  <li data-target="#kc-carousel-2" data-slide-to="3" class=""></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="item active"><a href="https://www.kingcounty.gov/depts/prosecutor/profiles-new/FrohAmanda.aspx"><img height="598" alt="Amanda Froh, Senior Deputy Prosecutor" width="845" src="./test/2017AFroh.jpg">
+</a>
+                    <!-- Carousel caption-->
+                    <div class="carousel-caption">
+                      <h3><a href="https://www.kingcounty.gov/depts/prosecutor/profiles-new/FrohAmanda.aspx">Profile: Amanda Froh</a></h3>
+                    </div>
+                  </div>
+                  <div class="item"><a href="https://www.kingcounty.gov/depts/prosecutor/profiles-new/rajul.aspx"><img src="./test/rajul-carousel.jpg" alt="Mafe Rajul poses at the Administration Building in front of some trees">
+</a>
+                    <!-- Carousel caption-->
+                    <div class="carousel-caption">
+                      <h3><a href="https://www.kingcounty.gov/depts/prosecutor/profiles-new/rajul.aspx">Profile: Mafe Rajul</a></h3>
+                    </div>
+                  </div>
+                  <div class="item"><a href="https://www.kingcounty.gov/depts/prosecutor/profiles-new/Goode%20Sean.aspx"><img height="598" alt="Sean Goode, Choose 180 Director" width="845" src="./test/2017SGoode.jpg">
+</a>
+                    <!-- Carousel caption-->
+                    <div class="carousel-caption">
+                      <h3><a href="https://www.kingcounty.gov/depts/prosecutor/profiles-new/Goode%20Sean.aspx">Profile: Sean Goode</a></h3>
+                    </div>
+                  </div>
+                  <div class="item"><a href="https://www.kingcounty.gov/depts/prosecutor/profiles-new/Larson%20Mark.aspx"><img height="598" alt="Mark Larson, Criminal Division Chief" width="845" src="./test/2017MLarson.jpg">
+</a>
+                    <!-- Carousel caption-->
+                    <div class="carousel-caption">
+                      <h3><a href="https://www.kingcounty.gov/depts/prosecutor/profiles-new/Larson%20Mark.aspx">Profile: Mark Larson</a></h3>
+                    </div>
+                  </div>
+                </div>
+                <!-- Controls--><a class="left carousel-control" href="https://www.kingcounty.gov/depts/prosecutor.aspx#kc-carousel-2" data-slide="prev"><span class="fa-stack"><em class="fa fa-square fa-stack-2x"></em><em class="fa fa-chevron-left fa-stack-1x"></em></span></a>
+                <a
+                  class="right carousel-control" href="https://www.kingcounty.gov/depts/prosecutor.aspx#kc-carousel-2" data-slide="next"><span class="fa-stack"><em class="fa fa-square fa-stack-2x"></em><em class="fa fa-chevron-right fa-stack-1x"></em></span></a>
+              </div>
             </div>
           </div>
 
@@ -982,7 +1012,7 @@
                   <div id="myMap" class="map-canvas" style="height: 260px; position: relative; overflow: hidden;">
                     <div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
                       <div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;">
-                        <div tabindex="0" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default;">
+                        <div tabindex="0" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;">
                           <div style="z-index: 1; position: absolute; left: 50%; top: 50%; transform: translate(0px, 0px);">
                             <div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
                               <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
@@ -1013,7 +1043,7 @@
                                   <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;"></div>
                                 </div>
                               </div>
-                              <div style="width: 27px; height: 43px; overflow: hidden; position: absolute; left: 116px; top: -13px; z-index: 30;"><img alt="" src="./King County Prosecuting Attorney - King County_files/spotlight-poi2_hdpi.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                              <div style="width: 27px; height: 43px; overflow: hidden; position: absolute; left: 116px; top: -13px; z-index: 30;"><img alt="" src="./test/spotlight-poi2.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
                             </div>
                             <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
                               <div style="position: absolute; z-index: 1; transform: matrix(1, 0, 0, 1, -7, -174);">
@@ -1029,13 +1059,16 @@
                       <div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;">
                         <p class="gm-style-pbt"></p>
                       </div>
-                      <div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;">
+                      <div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;">
                         <div style="z-index: 1; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;"></div>
                         <div style="z-index: 4; position: absolute; left: 50%; top: 50%; transform: translate(0px, 0px);">
                           <div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div>
                           <div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div>
                           <div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;">
-                            <div class="gmnoprint" title="" style="width: 43px; height: 59px; overflow: hidden; position: absolute; opacity: 0.01; cursor: pointer; left: 108px; top: -21px; z-index: 30;"><img alt="" src="./King County Prosecuting Attorney - King County_files/spotlight-poi2_hdpi.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 43px; height: 59px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                            <div class="gmnoprint" style="width: 27px; height: 43px; overflow: hidden; position: absolute; opacity: 0.01; left: 116px; top: -13px; z-index: 30;"><img alt="" src="./test/spotlight-poi2.png" draggable="false" usemap="#gmimap0" style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
+                              <map
+                                name="gmimap0" id="gmimap0"><area log="miw" coords="13.5,0,4,3.75,0,13.5,13.5,43,27,13.5,23,3.75" shape="poly" title="" style="cursor: pointer; touch-action: none;"></map>
+                            </div>
                           </div>
                           <div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div>
                         </div>
@@ -1043,16 +1076,15 @@
                     </div><iframe frameborder="0" src="./King County Prosecuting Attorney - King County_files/saved_resource(1).html" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"></iframe>
                     <div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;">
                       <a target="_blank" href="https://maps.google.com/maps?ll=47.602839,-122.331353&amp;z=18&amp;t=k&amp;hl=en-US&amp;gl=US&amp;deg=0&amp;mapclient=apiv3" title="Click to see this area on Google Maps" style="position: static; overflow: visible; float: none; display: inline;">
-                        <div style="width: 66px; height: 26px; cursor: pointer;"><img alt="" src="./King County Prosecuting Attorney - King County_files/google_white5_hdpi.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></div>
+                        <div style="width: 66px; height: 26px; cursor: pointer;"><img alt="" src="./test/google_white5.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></div>
                       </a>
                     </div>
                     <div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 52px; top: 40px;">
                       <div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div>
                       <div style="font-size: 13px;">Map data ©2018</div>
-                      <div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000;"><img alt="" src="./King County Prosecuting Attorney - King County_files/mapcnt6.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
-                      <img
-                        alt="" src="./King County Prosecuting Attorney - King County_files/transparent.png" draggable="false" style="width: 37px; height: 37px; user-select: none; border: 0px; padding: 0px; margin: 0px; position: absolute; right: 0px; top: 0px; z-index: 10001; cursor: pointer;"></div>
-                    <div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 72px; bottom: 0px; width: 87px;">
+                      <div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img alt="" src="./test/mapcnt6.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div>
+                    </div>
+                    <div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 169px; bottom: 0px; width: 87px;">
                       <div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;">
                         <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
                           <div style="width: 1px;"></div>
@@ -1064,89 +1096,98 @@
                     <div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;">
                       <div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2018</div>
                     </div>
-                    <div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;">
+                    <div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 97px; bottom: 0px;">
                       <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
                         <div style="width: 1px;"></div>
                         <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
                       </div>
                       <div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a></div>
-                    </div><button draggable="false" title="Toggle fullscreen view" aria-label="Toggle fullscreen view" type="button" style="background: none rgb(255, 255, 255); border: 0px; margin: 10px 14px; padding: 0px; position: absolute; cursor: pointer; user-select: none; width: 25px; height: 25px; overflow: hidden; display: none; top: 0px; right: 0px;"><img alt="" src="./King County Prosecuting Attorney - King County_files/sv9.png" draggable="false" class="gm-fullscreen-control" style="position: absolute; left: -52px; top: -86px; width: 164px; height: 175px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></button></div>
+                    </div><button draggable="false" title="Toggle fullscreen view" aria-label="Toggle fullscreen view" type="button" style="background: none rgb(255, 255, 255); border: 0px; margin: 10px 14px; padding: 0px; position: absolute; cursor: pointer; user-select: none; width: 25px; height: 25px; overflow: hidden; display: none; top: 0px; right: 0px;"><img alt="" src="./test/sv9.png" draggable="false" class="gm-fullscreen-control" style="position: absolute; left: -52px; top: -86px; width: 164px; height: 175px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></button>
+                    <div
+                      draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;">
+                      <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                        <div style="width: 1px;"></div>
+                        <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+                      </div>
+                      <div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_blank" rel="noopener" title="Report errors in the road map or imagery to Google" href="https://www.google.com/maps/@47.6028386,-122.3313534,18z/data=!3m1!1e3!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report a map error</a></div>
+                  </div>
                 </div>
               </div>
-              <div class="map-overlay">
-                <h3>Prosecuting Attorney's Office</h3>
-                <address>
+            </div>
+            <div class="map-overlay">
+              <h3>Prosecuting Attorney's Office</h3>
+              <address>
 <p>King County Courthouse<br>
 516 Third Avenue, W400 <br>
 Seattle, WA 98104<br>
 Hours: 8:30 a.m. - 4:30 p.m.</p>
 </address>
 
-                <!-- This button is required. href link will be automatically set by JavaScript -->
-                <a href="https://www.kingcounty.gov/depts/prosecutor.aspx#" class="btn btn-primary">
+              <!-- This button is required. href link will be automatically set by JavaScript -->
+              <a href="https://www.kingcounty.gov/depts/prosecutor.aspx#" class="btn btn-primary">
 
-                  <div class="fa fa-building-o"></div>
-                </a>&nbsp;<a href="https://www.google.com/maps/dir//516%20Third%20Ave.%20Seattle,%20WA%2098104" id="map-link" class="btn btn-primary">Get directions</a>
+                <div class="fa fa-building-o"></div>
+              </a>&nbsp;<a href="https://www.google.com/maps/dir//516%20Third%20Ave.%20Seattle,%20WA%2098104" id="map-link" class="btn btn-primary">Get directions</a>
 
-              </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="remove-link-underline">
-            <a href="https://www.facebook.com/kcprosecutor"><span class="fa-stack fa-2x"><em class="fa fa-square fa-stack-2x fa-inverse"></em><em class="fa fa-facebook-square fa-stack-2x"></em></span></a>
-            <a href="https://twitter.com/KCProsecutor"><span class="fa-stack fa-2x"><em class="fa fa-square fa-stack-2x fa-inverse"></em><em class="fa fa-twitter-square fa-stack-2x"></em></span></a>
-            <a href="https://www.linkedin.com/company/king-county-prosecuting-attorney&#39;s-office"><span class="fa-stack fa-2x"><em class="fa fa-square fa-stack-2x fa-inverse"></em><em class="fa fa-linkedin-square fa-stack-2x"></em></span></a>
-            <!-- Use .media class to get proper formatted of image and text -->
-            <div class="media">
-              <!-- Use .media-object class on images inside of a .media class -->
-              <div class="media-left"><img alt="dtsfooter" src="./King County Prosecuting Attorney - King County_files/dtsfooter.jpg" class="media-object"></div>
-              <div class="media-body">
-                <p class="media-heading">King County Prosecutor<br>
-                  <strong>Dan Satterberg</strong></p>
-              </div>
-            </div>
-            <div class="media">
-              <div class="media-body">
-                <p>Read Dan's <a href="https://www.kingcounty.gov/depts/prosecutor/bio.aspx">biography</a></p>
-
-              </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="remove-link-underline">
+          <a href="https://www.facebook.com/kcprosecutor"><span class="fa-stack fa-2x"><em class="fa fa-square fa-stack-2x fa-inverse"></em><em class="fa fa-facebook-square fa-stack-2x"></em></span></a>
+          <a href="https://twitter.com/KCProsecutor"><span class="fa-stack fa-2x"><em class="fa fa-square fa-stack-2x fa-inverse"></em><em class="fa fa-twitter-square fa-stack-2x"></em></span></a>
+          <a href="https://www.linkedin.com/company/king-county-prosecuting-attorney&#39;s-office"><span class="fa-stack fa-2x"><em class="fa fa-square fa-stack-2x fa-inverse"></em><em class="fa fa-linkedin-square fa-stack-2x"></em></span></a>
+          <!-- Use .media class to get proper formatted of image and text -->
+          <div class="media">
+            <!-- Use .media-object class on images inside of a .media class -->
+            <div class="media-left"><img alt="dtsfooter" src="./test/dtsfooter.jpg" class="media-object"></div>
+            <div class="media-body">
+              <p class="media-heading">King County Prosecutor<br>
+                <strong>Dan Satterberg</strong></p>
             </div>
           </div>
+          <div class="media">
+            <div class="media-body">
+              <p>Read Dan's <a href="https://www.kingcounty.gov/depts/prosecutor/bio.aspx">biography</a></p>
 
-          <div class="call-out-text call-out-text-default">
-            <p>Subscribe to Our Newsletter<br>
-              <strong>The Prosecutor's Post</strong></p>
-            <form accept-charset="UTF-8" action="https://public.govdelivery.com/accounts/WAKING/subscribers/qualify" id="GD-snippet-form" method="post"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="ctBL6JVkUANtSb1MFgfq6/Sd53MTLI34Hvziefcxk9s=">
-              <div class="input-group">
-                <input id="topic_id" name="topic_id" type="hidden" value="WAKING_618">
-                <input id="subscription_type" name="subscription_type" type="hidden" value="email">
-                <input class="form-control" type="text" placeholder="Your email address" id="email" name="email"><span class="input-group-btn">
+            </div>
+          </div>
+        </div>
+
+        <div class="call-out-text call-out-text-default">
+          <p>Subscribe to Our Newsletter<br>
+            <strong>The Prosecutor's Post</strong></p>
+          <form accept-charset="UTF-8" action="https://public.govdelivery.com/accounts/WAKING/subscribers/qualify" id="GD-snippet-form" method="post"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="ctBL6JVkUANtSb1MFgfq6/Sd53MTLI34Hvziefcxk9s=">
+            <div class="input-group">
+              <input id="topic_id" name="topic_id" type="hidden" value="WAKING_618">
+              <input id="subscription_type" name="subscription_type" type="hidden" value="email">
+              <input class="form-control" type="text" placeholder="Your email address" id="email" name="email"><span class="input-group-btn">
 <input class="btn btn-primary" type="submit" value="Go!"></span>
-              </div>
-            </form>
+            </div>
+          </form>
 
-          </div>
         </div>
       </div>
-
-
-
-
-      <div class="row addon-row addon-row-transparent main-share-links">
-        <div class="col-sm-12">
-          <ul class="list-inline">
-            <li id="LastUpdate">Last Updated April 27, 2018 &nbsp; &nbsp;</li>
-            <li class="clearfix visible-xs"></li>
-            <li class="hidden-print"><a id="facebook-share-button" href="https://www.kingcounty.gov/depts/prosecutor.aspx#" class="btn btn-default" rel="nofollow"><span class="fa fa-facebook-square"></span>&nbsp;Share</a></li>
-            <li class="hidden-print"><a id="twitter-share-button" href="https://www.kingcounty.gov/depts/prosecutor.aspx#" class="btn btn-default" rel="nofollow"><span class="fa fa-twitter"></span>&nbsp;Tweet</a></li>
-            <li class="hidden-print"><a id="email-share-button" href="https://www.kingcounty.gov/depts/prosecutor.aspx#" class="btn btn-default" rel="nofollow"><span class="fa fa-envelope"></span>&nbsp;Email</a></li>
-            <li class="hidden-print"><a id="print-share-button" href="https://www.kingcounty.gov/depts/prosecutor.aspx#" class="btn btn-default" rel="nofollow"><span class="fa fa-print"></span>&nbsp;Print</a></li>
-          </ul>
-        </div>
-      </div>
-
     </div>
+
+
+
+
+    <div class="row addon-row addon-row-transparent main-share-links">
+      <div class="col-sm-12">
+        <ul class="list-inline">
+          <li id="LastUpdate">Last Updated April 27, 2018 &nbsp; &nbsp;</li>
+          <li class="clearfix visible-xs"></li>
+          <li class="hidden-print"><a id="facebook-share-button" href="https://www.kingcounty.gov/depts/prosecutor.aspx#" class="btn btn-default" rel="nofollow"><span class="fa fa-facebook-square"></span>&nbsp;Share</a></li>
+          <li class="hidden-print"><a id="twitter-share-button" href="https://www.kingcounty.gov/depts/prosecutor.aspx#" class="btn btn-default" rel="nofollow"><span class="fa fa-twitter"></span>&nbsp;Tweet</a></li>
+          <li class="hidden-print"><a id="email-share-button" href="https://www.kingcounty.gov/depts/prosecutor.aspx#" class="btn btn-default" rel="nofollow"><span class="fa fa-envelope"></span>&nbsp;Email</a></li>
+          <li class="hidden-print"><a id="print-share-button" href="https://www.kingcounty.gov/depts/prosecutor.aspx#" class="btn btn-default" rel="nofollow"><span class="fa fa-print"></span>&nbsp;Print</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
   </div>
   <!-- /.row-->
   </div>
@@ -1259,7 +1300,7 @@ Hours: 8:30 a.m. - 4:30 p.m.</p>
         <div class="row">
           <div class="col-sm-4">
             <a href="https://www.kingcounty.gov/" title="King County Home">
-                            <img id="footer-legal-logo" class="img-responsive" src="./King County Prosecuting Attorney - King County_files/horiz_transbg.gif" alt="footer logo"></a>
+                            <img id="footer-legal-logo" class="img-responsive" src="./test/horiz_transbg.gif" alt="footer logo"></a>
           </div>
           <div class="col-sm-8">
             <ul class="list-unstyled list-inline">
@@ -1278,9 +1319,9 @@ Hours: 8:30 a.m. - 4:30 p.m.</p>
   </footer>
 
   <!-- Javascript files -->
-  <script src="./King County Prosecuting Attorney - King County_files/jquery.min.js"></script>
-  <script src="./King County Prosecuting Attorney - King County_files/bootstrap.min.js"></script>
-  <script src="./King County Prosecuting Attorney - King County_files/main.js"></script>
+  <script src="./test/jquery.min.js"></script>
+  <script src="./test/bootstrap.min.js"></script>
+  <script src="./test/main.js"></script>
   <!--set the background image-->
   <script>
     $(window).on("resize", function() {
@@ -1300,7 +1341,7 @@ Hours: 8:30 a.m. - 4:30 p.m.</p>
       b.parentNode.insertBefore(a, b)
     }, 1);
   </script>
-  <script src="./King County Prosecuting Attorney - King County_files/googlemapsapi.aspx"></script>
+  <script src="./test/googlemapsapi.aspx"></script>
   <script src="./King County Prosecuting Attorney - King County_files/dept-footer-map.js"></script>
   <script>
     (function($) {

@@ -110,8 +110,9 @@
           </li>
         </ul>
 
+        <!-- universal search (for all of King County) -->
         <form class="form-inline my-2 my-lg-0">
-          <input id="topSearchBar" class="form-control mr-sm-2 w-75" type="search" placeholder="Search" aria-label="Search" />
+          <input id="topSearchBar" class="form-control mr-sm-2 w-75" type="search" placeholder="Search King County" aria-label="Search" />
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
             <ion-icon name="search"></ion-icon>
           </button>
@@ -119,6 +120,18 @@
       </div>
     </nav>
 
+    <header class="jumbotron">
+      <h1 class="display-5">
+        King County Prosecuting Attorney
+      </h1>
+      <!-- BUG: breaks at 577px WTF WTF WTF -->
+      <form class="form-inline d-inline-flex">
+        <input id="searchPApages" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search Prosecuting Attorney's pages" />
+        <button class="btn btn-sm btn-outline-primary" type="submit">
+          <ion-icon name="search"></ion-icon>
+        </button>
+      </form>
+    </header>
 
     <!-- scripts: required (jQuery, popper.js, bootstrap js, & ionicons) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

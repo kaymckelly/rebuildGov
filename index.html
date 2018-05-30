@@ -23,31 +23,99 @@
         </div>
 
         <!-- universal search (for all of King County site) -->
-        <div class="input-group col-md-3 offset-md-5 col-2 offset-4 h-50 pt-3 mr-md-1">
-          <input type="text" class="form-control d-none d-sm-none d-md-block d-lg-block" placeholder="Search Kingcounty.gov" name="univSearch" id="univSearch" />
+        <div class="input-group col-md-3 offset-md-5 col-2 offset-4 h-50 pt-3 mr-md-1" id="topSearchbar">
+          <input type="text" class="form-control-sm d-none d-sm-none d-md-block d-lg-block" placeholder="Search Kingcounty.gov" name="univSearch" id="univSearch" />
           <div class="input-group-append">
-            <button type="button" class="btn btn-outline-light" name="button">
+            <button type="button" class="btn btn-outline-light" id="univSearchBtn" name="button">
               <ion-icon name="search"></ion-icon>
             </button>
           </div>
         </div>
       </div>
 
-      <div class="row">
-        <nav class="navbar navbar-expand-md navbar-light" id="universalNav">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsedNavContent" aria-controls="collapsedNavContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <nav class="navbar navbar-expand-md navbar-dark ml-auto" id="universalNav" role="navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsedNavContent" aria-controls="collapsedNavContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="collapse navbar-collapse" id="collapsedNavContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  Home
+        <div class="collapse navbar-collapse" id="collapsedNavContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                Home
+              </a>
+            </li>
+            <!-- NOTE: these dropdowns are deliberately left unfinished because they are part of the county site design, which I don't have control over, so this is just an approximation -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                How do I...?
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <!-- NOTE: I opted to write custom css for the h6, rather than using the native Bootstrap 4 dropdown-header class -->
+                <h6 class="navTitle">Apply for</h6>
+                <a class="dropdown-item" href="#">Permits</a>
+                <a class="dropdown-item" href="#">Jobs at King County</a>
+                <a class="dropdown-item" href="#">Pet License</a>
+                <a href="#" class="btn btn-sm btn-outline-primary dropdown-item">
+                  <ion-icon name="more"></ion-icon>
                 </a>
-              </li>
-        </nav>
-      </div>
+                <div class="dropdown-divider"></div>
+                <h6 class="navTitle">Attend</h6>
+                <a class="dropdown-item" href="#">Jury duty</a>
+                <div class="dropdown-divider"></div>
+                <h6 class="navTitle">Do business with King County</h6>
+                <a class="dropdown-item" href="#">Register as a vendor</a>
+                <a class="dropdown-item" href="#">View bid & contract opportunities</a>
+                <a class="dropdown-item" href="#">Become a certified small business contractor or supplier</a>
+                <a href="#" class="btn btn-sm btn-outline-primary dropdown-item">
+                  <ion-icon name="more"></ion-icon>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Animals & pets</a>
+                <a class="dropdown-item" href="#">Arts & culture</a>
+                <a class="dropdown-item" href="#">Birth & death records</a>
+                <a class="dropdown-item" href="#">Business</a>
+                <a class="dropdown-item" href="#">Codes & laws</a>
+                <a class="dropdown-item" href="#">Courts</a>
+                <a class="dropdown-item" href="#">Emergencies</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About King County
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Contact us</a>
+                <a class="dropdown-item" href="#">Elected officials</a>
+                <a class="dropdown-item" href="#">Equity & social justice</a>
+                <a class="dropdown-item" href="#">History</a>
+                <a class="dropdown-item" href="#">Jobs & training</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Departments
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Adult & Juvenile Detention</a>
+                <a class="dropdown-item" href="#">Assessor</a>
+                <a class="dropdown-item" href="#">Auditor</a>
+                <a class="dropdown-item" href="#">Board of Appeals/Equalization</a>
+                <a class="dropdown-item" href="#">Community & Human Services</a>
+                <a class="dropdown-item" href="#">Council</a>
+                <a class="dropdown-item" href="#">District Court</a>
+                <a class="dropdown-item" href="#">Economic & Financial Analysis</a>
+              </div>
+            </li>
+          </ul>
+          </ul>
+      </nav>
     </div>
     <!-- end top nav section -->
 

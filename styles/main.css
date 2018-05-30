@@ -54,3 +54,10 @@ header.jumbotron {
   margin-top: -90px;
   background-color: white;
 }
+
+
+/*** Individual Sections ***/
+article#docket, article#tweetSection {
+  overflow-y: scroll;
+  max-height: 200px;
+}

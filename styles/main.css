@@ -2,9 +2,10 @@
 
 
 /* Universal or Top Nav */
-/* NOTE: this connects to other sites on the King County domain */
 div#navbarBg {
-  background-image: image("../test/hero-lake1-sm.jpg");
+  background-image: url("../test/hero-lake1-sm.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #logoWrapper {
@@ -15,8 +16,12 @@ div#navbarBg {
 
 #univSearch {
   color: #939598;
-  background-color: #23221f;
+  background-color: #23221F;
   opacity: .9;
   filter: alpha(opacity=90);
-  border: solid 1px #706e66
+  border: solid 1px #706E66;
+}
+
+nav#universalNav {
+  /* background-color: purple; */
 }

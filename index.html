@@ -14,37 +14,44 @@
   </head>
   <body>
     <div id="navbarBg">
-      <!-- NOTE: bg added in main.css -->
       <div class="row">
         <!-- top King County logo -->
         <div class="col-md-2 offset-md-1 col-4 offset-1" id="logoWrapper">
           <a href="https://www.kingcounty.gov/">
-            <img id="kc-logo" src="./test/KClogo-horiz-black-lg.gif" alt="King County Logo" class="img-fluid mx-auto d-block">
+            <img id="kc-logo" src="./test/KClogo-horiz-black-lg.gif" alt="A black and white logo of Martin Luther King Junior's face with the words King County next to it." class="img-fluid mx-auto d-block">
           </a>
         </div>
 
         <!-- universal search (for all of King County site) -->
-        <!-- BUG: broken on mobile. srsly bootstrap, what up with this search sizing problem on small screens?? -->
-        <div class="col-md-3 offset-md-6 col-6">
-          <form class="form-inline my-2">
-            <input id="topSearchBar" class="form-control mr-sm-2" type="search" placeholder="Search King County" aria-label="Search" />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+        <div class="input-group col-md-3 offset-md-5 col-2 offset-4 h-50 pt-3 mr-md-1">
+          <input type="text" class="form-control d-none d-sm-none d-md-block d-lg-block" placeholder="Search Kingcounty.gov" name="univSearch" id="univSearch" />
+          <div class="input-group-append">
+            <button type="button" class="btn btn-outline-light" name="button">
               <ion-icon name="search"></ion-icon>
             </button>
-          </form>
+          </div>
         </div>
       </div>
+
+      <div class="row">
+        <nav class="navbar navbar-expand-md navbar-light" id="universalNav">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsedNavContent" aria-controls="collapsedNavContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="collapsedNavContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  Home
+                </a>
+              </li>
+        </nav>
+      </div>
     </div>
+    <!-- end top nav section -->
 
-    <!-- Top navbar (King County site-wide) -->
-    <!-- <nav id="universalNav" class="navbar navbar-expand-md navbar-light bg-light">
-      <a href="#" class="navbar-brand w-25" id="navBrand">
-        <img src="./images/KClogo-horiz-black-lg.gif"  alt="A black and white logo of Martin Luther King Junior's face with the words King County next to it." />
-      </a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsedNavContent" aria-controls="collapsedNavContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!--
 
       <div class="collapse navbar-collapse" id="collapsedNavContent">
         <ul class="navbar-nav mr-auto">

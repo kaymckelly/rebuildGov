@@ -8,6 +8,10 @@
   }
 }
 
+h1 {
+  margin-bottom: 40px;
+}
+
 
 /*** Universal or Top Nav ***/
 div#navbarBg {
@@ -59,5 +63,5 @@ header.jumbotron {
 /*** Individual Sections ***/
 article#docket, article#tweetSection {
   overflow-y: scroll;
-  max-height: 200px;
+  max-height: 300px;
 }

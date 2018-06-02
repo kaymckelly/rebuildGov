@@ -8,10 +8,6 @@
   }
 }
 
-h1 {
-  margin-bottom: 40px;
-}
-
 
 /*** Universal or Top Nav ***/
 div#navbarBg {
@@ -57,6 +53,10 @@ h6.navTitle {
 header.jumbotron {
   margin-top: -90px;
   background-color: white;
+}
+
+h1 {
+  margin-bottom: 40px;
 }
 
 

@@ -124,114 +124,81 @@
     <header class="jumbotron jumbotron-fluid">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-10">
+          <div class="col-12">
             <h1>
               King County Prosecuting Attorney
-              <a href="#" class="badge badge-dark" name="facebook">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-              <a href="#" class="badge badge-dark" name="twitter">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-              <a href="#" class="badge badge-dark" name="contact us">
-                <ion-icon name="call"></ion-icon>
-              </a>
+              <!-- social & contact links -->
+              <div class="float-right">
+                <a href="#" class="text-dark" name="facebook">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="#" class="text-dark" name="twitter">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a href="#" class="text-dark" name="contact us">
+                  <ion-icon name="call"></ion-icon>
+                </a>
+              </div>
             </h1>
           </div>
+        </div>
 
-          <!-- NOTE: decision to relocate quicklinks -->
-          <!-- <div class="col-2">
-            <div class="btn-group float-right" role="group" aria-label="Social and contact">
-              <a href="#" class="btn btn-outline-info" name="facebook">
-                <ion-icon name="logo-facebook"></ion-icon>
+        <!-- PA nav tabs -->
+        <ul class="nav nav-tabs nav-fill">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              Jobs/Volunteer
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              Protection Orders
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              News & Media
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Victim & Community Services
+            </a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">
+                Domestic Violence
               </a>
-              <a href="#" class="btn btn-outline-info" name="twitter">
-                <ion-icon name="logo-twitter"></ion-icon>
+              <a href="#" class="dropdown-item">
+                Elder/Vulnerable Adult Abuse
               </a>
-              <a href="#" class="btn btn-outline-info" name="contact">
-                <ion-icon name="call"></ion-icon>
+              <a href="#" class="dropdown-item">
+                Victim Assistance
+              </a>
+              <a href="#" class="dropdown-item">
+                Youth Programs
               </a>
             </div>
-          </div> -->
-
-          <!-- TODO: social links below important ones in jumbotron -->
-          <!-- <div class="btn-group btn-group-lg float-right" role="group" aria-label="Social links">
-            <a href="#" class="btn btn-outline-success" name="facebook">
-              <ion-icon name="logo-facebook"></ion-icon>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              Child & Family Support
             </a>
-            <a href="#" class="btn btn-outline-success" name="twitter">
-              <ion-icon name="logo-twitter"></ion-icon>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              Civil & Criminal Divisions
             </a>
-          </div> -->
-          <!-- BUG: breaks at 577px WTF WTF WTF -->
-          <!-- TODO: replace important links with search bar if possible, with autocomplete etc, a la Arkansas government page -->
-          <!-- <form class="form-inline d-inline-flex">
-          <input id="searchPApages" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search Prosecuting Attorney's pages" />
-          <button class="btn btn-sm btn-outline-primary" type="submit">
-          <ion-icon name="search"></ion-icon>
-        </button>
-      </form> -->
-        </div>
+          </li>
+        </ul>
       </div>
-
-      <!-- PA nav tabs -->
-      <ul class="nav nav-tabs nav-fill">
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            Jobs/Volunteer
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            Protection Orders
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            News & Media
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-            Victim & Community Services
-          </a>
-          <div class="dropdown-menu">
-            <a href="#" class="dropdown-item">
-              Domestic Violence
-            </a>
-            <a href="#" class="dropdown-item">
-              Elder/Vulnerable Adult Abuse
-            </a>
-            <a href="#" class="dropdown-item">
-              Victim Assistance
-            </a>
-            <a href="#" class="dropdown-item">
-              Youth Programs
-            </a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            Child & Family Support
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            Civil & Criminal Divisions
-          </a>
-        </li>
-        <!-- <li class="nav-item">
-          <a href="#" class="nav-link">
-            Contact Us
-          </a>
-        </li> -->
-      </ul>
+      <!-- end container fluid -->
     </header>
     <!-- end jumbotron -->
 
     <!-- main content for prosecuting attorney's page -->
     <main class="container">
       <section class="row">
+
         <!-- get to know us -->
         <article class="col-12 col-md-8 p-md-0 m-md-0 mb-3 mb-md-1">
           <h3>
@@ -274,6 +241,7 @@
               </figure>
             </div>
           </div>
+          <!-- goes to profiles page -->
           <a href="#" class="btn btn-sm btn-outline-success mb-5">
             Learn more
           </a>
@@ -288,6 +256,7 @@
             The King County prosecuting attorney's office has many opportunities, including internships, career, and volunteer opportunities.
           </p>
           <p>
+            <!-- goes to jobs page -->
             <a href="#" class="btn btn-sm btn-block btn-outline-success">
               Learn more
             </a>
@@ -308,7 +277,21 @@
             Programs & Community Engagement
           </h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Dan recently spoke at:
+            <ul>
+              <li>
+                Choices Program at Sylvester Middle School
+              </li>
+              <li>
+                Public Defender Conference at Seattle University
+              </li>
+              <li>
+                180 Program Fundraiser
+              </li>
+              <li>
+                Retired Public Employees Council Meeting
+              </li>
+            </ul>
           </p>
           <a href="#" class="btn btn-sm btn-outline-success mb-4">
             Learn more
@@ -341,12 +324,7 @@
           <h3>
             Recent tweets
           </h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <a class="twitter-timeline" data-link-color="#2B7BB9" href="https://twitter.com/KCProsecutor?ref_src=twsrc%5Etfw">Tweets by KCProsecutor</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </article>
 
         <!-- map section -->

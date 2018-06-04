@@ -73,25 +73,18 @@ div#directions {
 
 p#address {
   position: absolute;
-  top: 30%;
-  left: 50%;
+  top: 40%;
+  left: 36%;
   transform: translate(-50%, -50%);
   font-weight: bold;
 }
 
 p#hours {
   position: absolute;
-  top: 70%;
-  left: 50%;
+  top: 80%;
+  left: 38%;
   transform: translate(-50%, -50%);
   font-weight: bold;
-}
-
-a#googleMaps {
-  position: absolute;
-  top: 80%;
-  left: 40%;
-  transform: translate(-50%, -50%);
 }
 
 /* NOTE: filter doesn't work on IE, because of course it doesn't -_- */

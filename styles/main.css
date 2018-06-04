@@ -71,9 +71,17 @@ div#directions {
   color: black;
 }
 
-address {
+p#address {
   position: absolute;
-  top: 50%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+
+p#hours {
+  position: absolute;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-weight: bold;
@@ -81,9 +89,9 @@ address {
 
 a#googleMaps {
   position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-65%, -50%);
+  top: 80%;
+  left: 40%;
+  transform: translate(-50%, -50%);
 }
 
 /* NOTE: filter doesn't work on IE, because of course it doesn't -_- */

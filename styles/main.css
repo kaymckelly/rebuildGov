@@ -69,7 +69,7 @@ p#address {
   left: 36%;
   transform: translate(-50%, -50%);
   font-weight: bold;
-  /* TODO: needs bg */
+  /* TODO: background color would give better visibility */
 }
 
 p#hours {
@@ -90,4 +90,11 @@ img#courthouse {
 article#docket, article#tweetSection {
   overflow-y: scroll;
   max-height: 375px;
+}
+
+
+/*** Footer ***/
+h5.footerHeader {
+  margin-top: 10px;
+  font-weight: bold;
 }

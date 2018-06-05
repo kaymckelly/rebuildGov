@@ -77,6 +77,7 @@ p#address {
   left: 36%;
   transform: translate(-50%, -50%);
   font-weight: bold;
+  /* TODO: needs bg */
 }
 
 p#hours {

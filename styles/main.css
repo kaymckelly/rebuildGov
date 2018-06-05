@@ -1,14 +1,6 @@
 /* custom stylesheet by Kay McKelly, to supplement spacelab theme */
 
 
-/*** General ***/
-/* @media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 2.3em !important;
-  }
-} */
-
-
 /*** Universal or Top Nav ***/
 div#navbarBg {
   background-image: url("../test/hero-lake1-sm.jpg");
@@ -97,5 +89,5 @@ img#courthouse {
 /*** Individual Sections ***/
 article#docket, article#tweetSection {
   overflow-y: scroll;
-  max-height: 300px;
+  max-height: 375px;
 }
